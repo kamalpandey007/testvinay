@@ -26,7 +26,7 @@ class CreateRatingsTable extends Migration
             $table->timestamps();
             $table->foreign('rating_user_id')->references('id')->on('users');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('category_id')->references('id')->on('categories1221');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
